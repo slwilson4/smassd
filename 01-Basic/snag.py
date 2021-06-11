@@ -49,7 +49,7 @@ for id in ids:
                     wait_on_rate_limit=True)
         tweets.append(tweet)
     except:
-        log("Error downloading tweet: "+id)
+        log("Error downloading tweet: "+str(id))
 
 # Write tweets to file
 file = open(outputFile, 'w', encoding='UTF-8')
